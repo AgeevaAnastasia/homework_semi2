@@ -3,3 +3,22 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+Console.Clear();
+Console.Write("Введите целое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+
+if (a < 99)
+{
+    Console.WriteLine("Третьей цифры нет");
+}
+
+else 
+{   while (a > 1000)
+    {
+        a = a/10;
+    }
+    a = a % 10;
+
+    Console.WriteLine(a);
+}
