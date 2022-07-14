@@ -6,11 +6,11 @@
 Console.Clear();
 Console.Write("Введите целое трёхзначное число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-
+int res;
 if (a > 99 && a < 1000)
 {
-    a = (a % 100) / 10;
-    Console.WriteLine(a);
+    res = (a % 100) / 10;
+    Console.WriteLine(res);
 }
 else
 {

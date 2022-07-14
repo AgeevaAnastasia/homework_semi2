@@ -6,7 +6,7 @@
 Console.Clear();
 Console.Write("Введите целое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-
+int res;
 
 if (a < 99)
 {
@@ -18,7 +18,7 @@ else
     {
         a = a/10;
     }
-    a = a % 10;
+    res = a % 10;
 
-    Console.WriteLine(a);
+    Console.WriteLine($"Третья цифра числа это {res}");
 }
